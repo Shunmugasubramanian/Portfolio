@@ -1,0 +1,30 @@
+/* Global dark theme */
+body, html {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Container */
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 10px;
+  overflow-x: clip;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease-in-out;
+}

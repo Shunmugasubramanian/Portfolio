@@ -1,0 +1,128 @@
+.header {
+  background-color: #121212;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  height: 80px;
+  padding-left: 4px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.brand-icon {
+  font-size: 32px;
+  font-weight: bold;
+  color: #61dafb;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  border: 2px solid #61dafb;
+  padding: 4px 12px;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.brand-icon:hover {
+  background-color: #61dafb;
+  color: #121212;
+  transform: scale(1.1);
+}
+
+/* Full name */
+.logo {
+  margin-left: 15px;
+  font-size: 20px;
+  flex: 1;
+  color: #fff;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(97, 218, 251, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Hamburger menu (for mobile) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: #61dafb;
+  position: relative;
+  z-index: 1200;
+}
+
+/* Mobile responsive menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 20px;
+    display: none;
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    background: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+  }
+
+  .nav-links a:hover {
+    color: #61dafb;
+  }
+}
