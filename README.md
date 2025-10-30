@@ -2,6 +2,8 @@
 
 A responsive and modern **React-based portfolio** website to showcase my projects, skills, and achievements.
 
+Checkout portfolio in https://shunmugasubramanianportfolio.netlify.app
+
 ---
 
 ## 🚀 Features
@@ -19,6 +21,7 @@ A responsive and modern **React-based portfolio** website to showcase my project
 **Frontend:** React.js  
 **Styling:** CSS   
 **Version Control:** Git & GitHub
+**Deployment:** Netlify
 
 ---
 
